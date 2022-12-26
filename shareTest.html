@@ -1,80 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
+  
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px 'Courier New'; color: #f6f6ef; -webkit-text-stroke: #f6f6ef; background-color: #1d1e1a}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px 'Courier New'; color: #f4005f; -webkit-text-stroke: #f4005f; background-color: #1d1e1a}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Courier New'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #1d1e1a}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px 'Courier New'; color: #e0d561; -webkit-text-stroke: #e0d561; background-color: #1d1e1a}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px 'Courier New'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #1d1e1a}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #f6f6ef; -webkit-text-stroke: 0px #f6f6ef}
-    span.s3 {font: 14.7px 'Courier New'; font-kerning: none}
-    span.s4 {font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s5 {font-kerning: none; color: #f4005f; -webkit-text-stroke: 0px #f4005f}
-    span.s6 {font: 12.0px 'Courier New'; font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s7 {font-kerning: none; color: #58d1eb; -webkit-text-stroke: 0px #58d1eb}
-    span.s8 {font-kerning: none; color: #e0d561; -webkit-text-stroke: 0px #e0d561}
-    span.s9 {text-decoration: underline ; font-kerning: none}
-  </style>
+    <title>
+        How to use web share API for native 
+        share options in HTML and JavaScript?
+    </title>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p2"><span class="s2">&lt;</span><span class="s1"><b>html</b></span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p2"><span class="s2">&lt;</span><span class="s1"><b>head</b></span><span class="s2">&gt;</span></p>
-<p class="p2"><span class="s4">    </span><span class="s2">&lt;</span><span class="s1"><b>title</b></span><span class="s2">&gt;</span></p>
-<p class="p1"><span class="s4">        </span><span class="s1">How to use web share API for native </span></p>
-<p class="p1"><span class="s4">        </span><span class="s1">share options in HTML and JavaScript?</span></p>
-<p class="p2"><span class="s4">    </span><span class="s2">&lt;/</span><span class="s1"><b>title</b></span><span class="s2">&gt;</span></p>
-<p class="p2"><span class="s2">&lt;/</span><span class="s1"><b>head</b></span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p4"><span class="s2">&lt;</span><span class="s5"><b>body</b></span><span class="s6"> </span><span class="s7">style</span><span class="s2">=</span><span class="s1">"text-align: center;"</span><span class="s2">&gt;</span></p>
-<p class="p1"><span class="s4">    </span><span class="s1">&lt;</span><span class="s5"><b>h1</b></span><span class="s6"> </span><span class="s7">style</span><span class="s1">=</span><span class="s8">"color: green;"</span><span class="s1">&gt;GeeksforGeeks&lt;/</span><span class="s5"><b>h1</b></span><span class="s1">&gt;</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p1"><span class="s4">    </span><span class="s1">&lt;</span><span class="s5"><b>h2</b></span><span class="s1">&gt;Web Share API Demonstration&lt;/</span><span class="s5"><b>h2</b></span><span class="s1">&gt;</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p2"><span class="s4">    </span><span class="s2">&lt;</span><span class="s1"><b>button</b></span><span class="s6"> </span><span class="s7">id</span><span class="s2">=</span><span class="s8">"shareBtn"</span><span class="s2">&gt;Share&lt;/</span><span class="s1"><b>button</b></span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p2"><span class="s4">    </span><span class="s2">&lt;</span><span class="s1"><b>script</b></span><span class="s2">&gt;</span></p>
-<p class="p1"><span class="s4">        </span><span class="s1">document.querySelector('#shareBtn')</span></p>
-<p class="p1"><span class="s4">        </span><span class="s1">.addEventListener('click', event =&gt; {</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p1"><span class="s4">            </span><span class="s1">// Fallback, Tries to use API only</span></p>
-<p class="p1"><span class="s4">            </span><span class="s1">// if navigator.share function is</span></p>
-<p class="p5"><span class="s1">            </span><span class="s2">// available</span></p>
-<p class="p1"><span class="s4">            </span><span class="s1">if (navigator.share) {</span></p>
-<p class="p1"><span class="s4">                </span><span class="s1">navigator.share({</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p1"><span class="s4">                    </span><span class="s1">// Title that occurs over</span></p>
-<p class="p5"><span class="s1">                    </span><span class="s2">// web share dialog</span></p>
-<p class="p1"><span class="s4">                    </span><span class="s1">title: 'GeeksForGeeks',</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p5"><span class="s1">                    </span><span class="s2">// URL to share</span></p>
-<p class="p1"><span class="s4">                    </span><span class="s1">url: '<a href="https://geeksforgeeks.org/"><span class="s9">https://geeksforgeeks.org</span></a>'</span></p>
-<p class="p5"><span class="s1">                </span><span class="s2">}).then(() =&gt; {</span></p>
-<p class="p1"><span class="s4">                    </span><span class="s1">console.log('Thanks for sharing!');</span></p>
-<p class="p1"><span class="s4">                </span><span class="s1">}).catch(err =&gt; {</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p1"><span class="s4">                    </span><span class="s1">// Handle errors, if occured</span></p>
-<p class="p5"><span class="s1">                    </span><span class="s2">console.log(</span></p>
-<p class="p1"><span class="s4">                    </span><span class="s1">"Error while using Web share API:");</span></p>
-<p class="p5"><span class="s1">                    </span><span class="s2">console.log(err);</span></p>
-<p class="p5"><span class="s1">                </span><span class="s2">});</span></p>
-<p class="p5"><span class="s1">            </span><span class="s2">} else {</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p1"><span class="s4">                </span><span class="s1">// Alerts user if API not available </span></p>
-<p class="p1"><span class="s4">                </span><span class="s1">alert("Browser doesn't support this API !");</span></p>
-<p class="p5"><span class="s1">            </span><span class="s2">}</span></p>
-<p class="p5"><span class="s1">        </span><span class="s2">})</span></p>
-<p class="p2"><span class="s4">    </span><span class="s2">&lt;/</span><span class="s1"><b>script</b></span><span class="s2">&gt;</span></p>
-<p class="p2"><span class="s2">&lt;/</span><span class="s1"><b>body</b></span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s3"> </span><span class="s1"> </span></p>
-<p class="p2"><span class="s2">&lt;/</span><span class="s1"><b>html</b></span><span class="s2">&gt;</span></p>
+  
+<body style="text-align: center;">
+    <h1 style="color: green;">GeeksforGeeks</h1>
+  
+    <h2>Web Share API Demonstration</h2>
+  
+    <button id="shareBtn">Share</button>
+  
+    <script>
+        document.querySelector('#shareBtn')
+        .addEventListener('click', event => {
+  
+            // Fallback, Tries to use API only
+            // if navigator.share function is
+            // available
+            if (navigator.share) {
+                navigator.share({
+  
+                    // Title that occurs over
+                    // web share dialog
+                    title: 'GeeksForGeeks',
+  
+                    // URL to share
+                    url: 'https://geeksforgeeks.org'
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(err => {
+  
+                    // Handle errors, if occured
+                    console.log(
+                    "Error while using Web share API:");
+                    console.log(err);
+                });
+            } else {
+  
+                // Alerts user if API not available 
+                alert("Browser doesn't support this API !");
+            }
+        })
+    </script>
 </body>
+  
 </html>
